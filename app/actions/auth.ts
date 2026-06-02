@@ -37,7 +37,7 @@ export async function registerUser(formData: FormData) {
   const securedPassword = hashPassword(password);
 
   try {
-    // 3. Create user with seeded arrays as discussed
+    // 3. Create user with seeded arrays
     await User.create({
       firstName,
       lastName,
@@ -46,18 +46,6 @@ export async function registerUser(formData: FormData) {
       totalPortfolioAssets: 0,
       dailyProfit: 0,
       weeklyProfit: 0,
-      withdrawalProfit: 0,
-      tradeHistory: [
-        {
-          time: new Date().toLocaleTimeString([], {
-            hour: "2-digit",
-            minute: "2-digit",
-          }),
-          pair: "AURELIAN/INIT",
-          amount: 0,
-          isWin: true,
-        },
-      ],
       transactionHistory: [
         {
           transactionID: `AUL-${Math.random().toString(36).substring(2, 11).toUpperCase()}`,
@@ -72,10 +60,6 @@ export async function registerUser(formData: FormData) {
           activity: "Deposit",
         },
       ],
-
-      stakedCapital: "0.00",
-      averageAPY: "0.00%",
-      availableToClaim: "0.00",
     });
   } catch (error) {
     console.error("Database Error:", error);

@@ -2,18 +2,16 @@ import SignUp from "@/myComponents/SignupPage";
 import { getServerSession } from "next-auth";
 import { authOptions } from "@/config/authOptions";
 import { redirect } from "next/dist/client/components/navigation";
-import Navbar from "@/myComponents/Navbar";
-import BodyLayout from "@/myComponents/BodyLayout";
-import Footer from "@/myComponents/Footer";
 
 export default async function Home() {
   const session = await getServerSession(authOptions);
 
+  if (session) {
+    redirect("/dashboard");
+  }
   return (
     <>
-      <Navbar session={session} />
-      <BodyLayout />
-      <Footer />
+      <SignUp />
     </>
   );
 }

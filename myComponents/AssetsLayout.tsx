@@ -30,14 +30,6 @@ type LeanUser = {
   totalPortfolioAssets: string;
   dailyProfit: string;
   weeklyProfit: string;
-  withdrawalProfit: string;
-  tradeHistory: Array<{
-    time: string;
-    pair: string;
-    amount: number;
-    isWin: boolean;
-    _id: string;
-  }>;
   transactionHistory: Array<{
     transactionID: string;
     pair: string;

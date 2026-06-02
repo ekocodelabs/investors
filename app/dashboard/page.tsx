@@ -54,22 +54,6 @@ export default function Dashboard() {
                 asChild
                 className="text-white hover:bg-gray-300"
               >
-                <Link href="/trades">Trades</Link>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-            <SidebarMenuItem>
-              <SidebarMenuButton
-                asChild
-                className="text-white hover:bg-gray-300"
-              >
-                <Link href="/staking">Staking</Link>
-              </SidebarMenuButton>
-            </SidebarMenuItem>
-            <SidebarMenuItem>
-              <SidebarMenuButton
-                asChild
-                className="text-white hover:bg-gray-300"
-              >
                 <Link href="/assets">Assets</Link>
               </SidebarMenuButton>
             </SidebarMenuItem>

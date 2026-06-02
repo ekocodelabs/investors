@@ -38,14 +38,6 @@ type LeanUser = {
   totalPortfolioAssets: string;
   dailyProfit: string;
   weeklyProfit: string;
-  withdrawalProfit: string;
-  tradeHistory: Array<{
-    time: string;
-    pair: string;
-    amount: string;
-    isWin: boolean;
-    _id: string;
-  }>;
   transactionHistory: Array<{
     transactionID: string;
     pair: string;
@@ -57,9 +49,6 @@ type LeanUser = {
   }>;
   createdAt: string;
   __v: number;
-  stakedCapital: string;
-  averageAPY: string;
-  availableToClaim: string;
 };
 
 export function DashboardOverview() {
@@ -230,9 +219,7 @@ export function DashboardOverview() {
               <div className="text-xs text-zinc-500 uppercase">
                 Available to Claim
               </div>
-              <div className="text-2xl font-serif text-black">
-                {user?.availableToClaim}
-              </div>
+              <div className="text-2xl font-serif text-black">0.00</div>
             </div>
             <Separator className="bg-emerald-900/20" />
             <div className="grid grid-cols-2 gap-2">
@@ -240,9 +227,7 @@ export function DashboardOverview() {
                 <div className="text-[9px] text-zinc-600 uppercase">
                   Avg. APY
                 </div>
-                <div className="text-sm text-blue-400 font-mono">
-                  {user?.averageAPY}
-                </div>
+                <div className="text-sm text-blue-400 font-mono">0</div>
               </div>
               <div>
                 <div className="text-[9px] text-zinc-600 uppercase">Status</div>
