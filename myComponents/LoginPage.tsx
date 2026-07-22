@@ -52,7 +52,7 @@ export default function LoginPage() {
           <div className="space-y-2 text-center">
             {/* Emerald Accent on Logo/Name */}
             <h1 className="text-4xl font-serif tracking-tighter text-blue-500 italic">
-              Profit Towers
+              Investors
             </h1>
             <p className="text-white text-[10px] uppercase tracking-[0.3em]">
               Wealth Management Portal
