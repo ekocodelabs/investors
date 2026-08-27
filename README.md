@@ -1,3 +1,24 @@
+
+Investors
+
+Investors is a secure, high-performance trading platform built with Next.js and TypeScript. It features a robust user authentication system and a secure backend infrastructure designed to manage user portfolios and trading activities seamlessly.
+
+🚀 Features
+User Authentication: Secure sign-up, login, and session management powered by NextAuth.js.
+Password Security: Multi-layered security using bcrypt for heavy hashing and encryption of user passwords.
+Data Management: Fast and persistent storage for user data, transactions, and portfolios utilizing MongoDB.
+Type-Safe Codebase: Robust data integrity and reduced runtime errors written entirely in TypeScript.
+Responsive UI: A modern, clean trading interface optimized for both mobile and desktop screens via Tailwind CSS.
+
+🛠️ Tech Stack
+Framework: Next.js
+Language: TypeScript
+Authentication: NextAuth.js
+Security: bcrypt
+Database: MongoDB
+Styling: Tailwind CSS
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
